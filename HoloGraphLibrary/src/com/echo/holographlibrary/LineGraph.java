@@ -78,6 +78,14 @@ public class LineGraph extends View {
 		shouldUpdate = true;
 		postInvalidate();
 	}
+
+    public void update() {
+        shouldUpdate = true;
+    }
+
+    public void removeLine(int line) {
+        lines.remove(line);
+    }
 	
 	public void addLine(Line line) {
 		lines.add(line);

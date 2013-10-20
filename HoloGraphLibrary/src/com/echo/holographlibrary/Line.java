@@ -29,6 +29,7 @@ public class Line {
 	private ArrayList<LinePoint> points = new ArrayList<LinePoint>();
 	private int color;
 	private boolean showPoints = true;
+    private boolean isHighlighted = false;
 	
 	
 	public int getColor() {
@@ -58,5 +59,9 @@ public class Line {
 	public void setShowingPoints(boolean showPoints) {
 		this.showPoints = showPoints;
 	}
+
+    public void setHighlighted(boolean highlighted) {
+        this.isHighlighted = highlighted;
+    }
 	
 }
